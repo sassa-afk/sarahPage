@@ -1,0 +1,885 @@
+@import url('css2.css');
+
+
+body{
+      margin: 0;
+
+  background: linear-gradient(360deg, #000000, #0a0a2a, #141454, #1e1e7f, #000000);
+  background-size: 3000% 3000%;  
+  animation: color 15s ease infinite; 
+  overflow-x: hidden;
+  display: block ;
+
+ 
+}
+
+h2,h1{
+  margin-top: 3%;
+  color: whitesmoke;
+  padding-left : 7% ;
+  padding-top : 1% ;
+  animation: animacao1  10s  ; 
+  background-color: rgba(0, 0, 0, 0.0) ;
+}
+ 
+p{
+  margin-top: 5% ;
+  color: whitesmoke;
+    padding: 3% ;
+  background-color: rgba(0, 0, 0, 0) ;
+
+}
+
+/*------------------------------------------------------------------------------*/
+
+.menu_fixo {
+ 
+    background-color: rgba(0, 0, 0, 0.9);  
+    height: 7vh;
+    width: 100vw;
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 1;  
+}
+
+.btnMenu {
+    margin-top: 0px;
+    margin-left: 2px;
+    display: flex;
+    background: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    height: 100%;
+    width: 5%;
+    color: white;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;  
+}
+
+.btnMenu:hover {
+    background: #1e1e7f;
+}
+
+.btnMenu a {
+    color: white;  
+    text-decoration: none;  
+}
+
+.btnMenu a:hover {
+    color: white;  
+}
+
+/*------------------------------------------------------------------------------*/
+/*+++++++++++++++++++++++++++++++ MENU HAMBURGUER ++++++++++++++++++++++++++++++*/
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+.menu {
+
+  background: #fff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+/*  position: fixed;*/
+/*  bottom: 25px;
+  right: 25px;*/
+  top : 2%;
+  left: 3%;
+/*  display: none;*/
+  z-index: 2;
+}
+
+.hamburguer {
+  position: relative;
+  display: block;
+  background: #000;
+  width: 10px;
+  height: 1px;
+  top: 14px;
+  left: 10px;
+  transition: 0.5s ease-in-out;
+}
+
+.hamburguer:before,
+.hamburguer:after {
+  background: #000;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 0.5s ease-in-out;
+}
+
+.hamburguer:before {
+  top: 5px;
+}
+
+.hamburguer:after {
+  bottom: 5px;
+}
+
+input {
+  display: none;
+}
+
+input:checked ~ label .hamburguer {
+  transform: rotate(45deg);
+}
+
+input:checked ~ label .hamburguer:before {
+  transform: rotate(90deg);
+  top: 0;
+}
+
+input:checked ~ label .hamburguer:after {
+  transform: rotate(90deg);
+  bottom: 0;
+}
+
+
+/*------------------------------------------------------------------------------*/
+
+.wrapper {
+  margin-left : 5% ; 
+/*  position: fixed;*/
+/*  top: 2%;*/
+/*  left: 50%;*/
+/*  transform: translate(-50%, -50%);*/
+}
+
+.wrapper a {
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: white ;
+  border: 2px solid white;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+}
+
+.wrapper a span {
+  position: relative;
+  z-index: 1;
+}
+
+.wrapper a::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: blueviolet;
+  transition: all .35s;
+}
+
+.wrapper a:hover {
+  color: white;
+}
+
+.wrapper a:hover::after {
+  width: 100%;
+}
+
+
+/*------------------------------------------------------------------------------*/
+
+
+.barra_menu_fixo{
+ 
+    background-color: rgba(0, 0, 0, 0.9);  
+    height: 5vh;
+    width: 100vw;
+    display: flex;
+    position: fixed;
+    z-index: 2;  
+}
+ 
+
+/*_______________*/
+
+.painel1{
+
+/*  margin-left: 01px ;*/
+  background-image: url('/public/imagens/1920.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  height: 100vh ;
+  width: 100wh;
+  display: flex ;
+  animation: animacao1 8s  ;
+/*  margin-left: 50%;*/
+}
+
+.filtro_painel_1{
+  background-color: rgba(0, 0, 0, 0.7);  
+  height: 100vh ;
+  width: 100wh;
+  display: flex;
+}
+
+.citacao1{
+
+  margin-left: 10vh ;
+  margin-top: 30vh ;
+  width: 20%;
+}
+
+.eu1 {
+    margin-left: 10%;
+    margin-top: 80vh;
+    font-size: 24px;
+    color: black;
+    
+    border-right: 5px solid black;
+    width: 0;
+
+    overflow: hidden; 
+    white-space: nowrap;
+    animation: typing 5s steps(38) forwards, blink 0.5s step-end infinite;
+/*  animation: animacao1 8s  ;*/
+
+}
+ 
+.p1{
+
+  opacity: 0;  
+  transform: translateX(5px); 
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.p1.ativo {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/*
+.p2{
+
+  opacity: 0;  
+  transform: translateX(5px); 
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.p2.ativo {
+  opacity: 1;
+  transform: translateY(0);
+}
+*/
+
+/*_______________*/
+
+.painelGeral{
+
+  height: 100vh;  
+  width: 100vw;  
+/*  background-color: ghostwhite;*/
+/*  display: block;  */
+}
+
+.cont_painel{
+/*  top : 0 ; */
+/*  margin:  0 ;*/
+  height: 100% ;
+  width: 60%;
+/*  background-color: rgba(0, 0, 0, 0) ;*/
+  margin-left : 21%;
+  top : 15% ;  
+  position: relative;  
+  display : block;
+/*  padding : 7% ;*/
+
+  
+
+
+}
+
+ .cont_card{
+
+ }
+ .card1{
+      background-image: url('/public/imagens/py.png');
+ 
+
+ }
+
+ .card2{
+      background-image: url('/public/imagens/r.png');
+ 
+  }
+
+ .card3{
+      background-image: url('/public/imagens/pwbi.png');
+ 
+ }
+
+ .card4{
+      background-image: url('/public/imagens/sql.png');
+      background-position: center ;
+ 
+ }
+
+
+.aux1{
+  margin: 0;
+
+  width: 100%;
+  height: 80%;
+/*  background-color:   coral;*/
+      display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+
+
+/*_______________*/
+
+.TempoFormacao {
+ 
+  background-image: url('/public/imagens/uu.png');
+/*  background-image: url('/public/imagens/uu.png');*/
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 85%;
+  width: 70%;
+
+  opacity: 0; /* Começa invisível */
+  transform: translateY(50px); /* Levemente deslocado para baixo */
+  transition: opacity 1s ease-out, transform 1s ease-out;
+/*  background-color:orange ;*/
+}
+
+.TempoFormacao.ativo {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.perfilImag{
+
+  background-image: url('/public/imagens/p2.png');
+  background-repeat: no-repeat;
+  background-position: center ;   
+  width: 100%;
+  height: 50%;
+/*      margin-left: 28%;*/
+  align-items : center ;
+/*  background-color : rgba(0, 0, 0, 0.1) ; */
+
+/*  border-radius: 110%;*/
+
+/*  margin-top: 10% ;*/
+}
+
+.cont_contatos{
+
+   width: 300px;
+  height: auto ;
+  margin-top: 1%;
+  display : flex ;
+  margin: 2% auto 1% auto ;  
+
+   justify-content: center;
+  align-items: center;
+
+ 
+ }
+
+.cont_icon_red{
+  width: 100px;
+  height:100px;
+/*  margin: 2%;*/
+  background-position: center ;
+  background-position: cover ;
+
+}
+
+.cont_icon_red:hover{
+
+  background-color: #1e1e7f;
+  border-radius: 30%;
+}
+
+
+.ld{
+  background-image: url('/public/imagens/link.png') ;
+    background-repeat: no-repeat ;
+
+}
+
+.mail{
+  background-image: url('/public/imagens/mail.png') ;
+    background-repeat: no-repeat ;
+
+}
+
+.git{
+  background-image: url('/public/imagens/git.png') ;
+  background-repeat: no-repeat ;
+}
+
+
+/******************* BALA ******************************/
+/*******************************************************/
+
+.balao1{
+
+  margin-left: 37% ; 
+  margin-top: -54% ;
+/*  animation: animacao2 4s ease-in-out;*/
+
+ 
+}
+
+.balao2{
+
+  margin-left: 37% ; 
+  margin-top: -43% ; 
+
+/*  animation: animacao2 4s ease-in-out;*/
+}
+
+.balao3{
+  margin-left: 37% ; 
+  margin-top: -31% ; 
+/*  animation: animacao2 4s ease-in-out;*/
+}
+
+.balao4{
+  margin-left: 37% ; 
+  margin-top: -16% ; 
+/*  animation: animacao2 4s ease-in-out;*/
+}
+
+
+
+
+/*------------------------------------------------------------------------------*/
+/*======== animações kayframe =============*/
+ 
+
+@keyframes color {
+    0% {
+        background-position: 0% 100%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 50% 100%;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+        height: 10ch;
+
+    }
+    to {
+        width: 54ch;  
+        height: 10ch;
+    }
+}
+
+@keyframes blink {
+    from {
+        border-color: transparent;
+    }
+    to {
+        border-color: black;
+    }
+}
+
+@keyframes animacao1 {
+
+      0% {
+        opacity: 0;  
+      }
+      100% {
+        opacity: 1; }
+
+
+}
+
+@keyframes animacao2{
+      0% {
+        opacity: 0;  
+        transform: translateY(-10%);
+
+      }
+      100% {
+        opacity: 5; 
+        transform: translateY(0%);
+      }
+
+ /*   0% {
+        transform: translateY(-10%);
+    }
+    100% {
+        transform: translateY(0%);
+    }*/
+}
+
+
+/*------------------------------------------------------------------------------*/
+ /* Smartphones em modo retrato   */
+
+@media (max-width: 1380px) { 
+
+/*  .perfilImag{
+        margin-left: 20%;
+ 
+  }*/
+
+  h1{
+    font-size: 20px;
+  }
+
+  h2{
+    font-size: 15px;
+  }
+  
+  p{
+    font-size: 10px;
+    margin-left: 0px;
+  }
+
+      /***************** MENU ***********************/
+
+  .barra_menu_fixo{
+    display: none ;
+  }
+
+  .menu {
+
+      position: fixed;
+
+
+  }
+
+
+  .espacoMenu{
+    margin-top: 20% ;
+  }
+
+
+  .menu_fixo{
+      display: block ;
+      height: 100%;
+      width: auto;
+      background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  .btnMenu{
+
+     height: 10vh;
+    width: 100vw;
+
+
+
+  }
+
+  .cont_painel{
+    margin-left: 0% ;
+  }
+
+  .TempoFormacao {
+
+  margin-left: 15%;
+  height: 65%;
+  width: 70%;
+
+}
+
+
+/*********************************************/
+
+  .img1{
+    margin-top: 25%;
+    height: 200px ; 
+    width: 200px;
+    margin-left: 10%; 
+  }
+
+  .filtro_painel_1{
+    display: block ;
+  }
+
+  .citacao1{
+
+    width: 60%;
+    margin-left: 2vh ;
+    margin-right: 5vh;
+    margin-top: 20vh;
+ 
+  }
+
+  .eu1{
+  
+    margin-right: 0vh;
+    margin-top: -15vh ;
+    margin-left: 0%;
+    top : 0 ;
+
+  }
+
+/*********************************************/
+
+  .cont_painel{
+    position: relative;
+    margin-right: 100% ;
+      display: block ;
+      width: 90%;
+  /*    padding : 0% ;*/
+      margin-left: 5%;
+      background: rgba(0, 0, 0, 0) ;
+
+
+
+    }
+
+  .aux1{
+    margin-top:5%;
+
+/*    margin-left: 18%;*/
+/*    display: block ;*/
+
+  }
+
+  .p2{
+    margin-top: 30%;
+  }
+
+ 
+/******************* BALAO ******************************/
+
+  .balao:before{
+  width:15px; 
+  height: 15px;
+  left:-6px; 
+  top:20px; 
+
+
+ 
+  }
+
+/******************************************************/
+
+  @keyframes typing {
+    from {
+        width: 0;
+        height: 10ch;
+
+    }
+    to {
+        width: 25ch;  
+        height: 10ch;
+    }
+  }
+ 
+}
+
+@media (max-width: 800px) { 
+
+/*  .perfilImag{
+        margin-left: 20%;
+ 
+  }*/
+}
+
+@media (max-width: 692px) { 
+
+/*.perfilImag{  margin-left : 10% ;}*/
+
+
+.TempoFormacao {
+ 
+  
+  margin-left: 10% ;
+
+
+/*    height: 90%;*/
+      width: 85%;
+
+ 
+  }
+
+.aux1{
+  display: block;
+ }
+
+}
+
+@media (max-width: 672px ) { 
+
+/*  .perfilImag{ align-items: center}*/
+
+ .p2{
+  margin-top: 80%;
+}
+
+ .TempoFormacao {
+/*     background-image: url('/public/imagens/sss.png');*/
+
+    background-image: url('/public/imagens/uu2.png');
+
+    margin-left: 0% ;
+
+/*      margin-left: -35%;*/
+/*      height: 80%;
+      width: 100%;*/
+            margin-left: 0%;
+          height: 70%;
+         width: 100%;
+         background-size: cover;
+/*         background-color : red ; */
+        background-size: cover;
+
+    }
+
+  .balao{
+        padding: 1%;
+        display: none ;
+        margin-left: 32% ; 
+
+
+  }
+      
+  .balao1{
+
+     margin-top: -163% ;
+    width: 50%;
+
+   
+  }
+
+  .balao2{
+
+     margin-top: -120% ; 
+
+      width: 50%;
+
+  }
+
+  .balao3{
+
+     margin-top: -80% ; 
+    width: 50%;
+
+  }
+
+  .balao4{
+
+     margin-top: -33% ; 
+    width: 50%;
+
+  }
+
+
+ 
+  }
+ 
+@media (max-width: 440px ) { 
+
+  .wrapper{
+        margin-top: -30%;
+
+  }
+
+  .p2{
+    margin-top: 150%;
+  }
+
+  .TempoFormacao {
+/*    margin-bottom: 1% ;*/
+          height: 70%;
+         width: 100%;
+
+  }
+
+  .mySlides {
+    margin-top: 20%;
+  }
+
+  .perfilImag{
+  width: 100%;
+  height: 50%;
+  margin-left: 0%;
+/*  padding: 55%;*/
+
+  background-size: cover;
+  }
+
+  
+
+
+ }
+ 
+@media (max-height: 580px ) { 
+
+/*  .wrapper{
+        margin-top: -30%;
+
+  }
+
+  .p2{
+    margin-top: 150%;
+  }
+*/
+  .TempoFormacao {
+/*    margin-bottom: 1% ;*/
+        margin-top: 0%;
+          height: 60%;
+         width: 70%;
+
+  }
+
+
+ }
+
+ 
+
+ 
+@media (orientation: landscape) and (max-width: 700px) {
+ 
+  .painel1{
+    display: block;
+
+  }
+
+  .filtro_painel_1{
+    display: block;
+  }
+
+  .citacao1{
+    position: absolute;
+    margin-left: 0%;
+    margin-top: 20%
+  }
+
+  .eu1{
+    position: absolute;
+    margin-top: 10%;
+  }
+  .wrapper{
+    display: none;
+    margin-top: -0%;
+  }
+}
