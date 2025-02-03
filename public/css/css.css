@@ -17,7 +17,7 @@ h2,h1{
   margin-top: 3%;
   color: whitesmoke;
   padding-left : 7% ;
-  padding-top : 1% ;
+  padding-top : 1%;
   animation: animacao1  10s  ; 
   background-color: rgba(0, 0, 0, 0.0) ;
 }
@@ -216,7 +216,8 @@ input:checked ~ label .hamburguer:after {
 .painel1{
 
 /*  margin-left: 01px ;*/
-  background-image: url('/public/imagens/1920.png');
+  background-image:url("../public/imagens/1920.png");
+ /*   background-image: url('https://i.pinimg.com/736x/e3/da/d0/e3dad0e6c76f768c00040388abb7753d.jpg'); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; 
@@ -314,18 +315,18 @@ input:checked ~ label .hamburguer:after {
 
  }
  .card1{
-      background-image: url('/public/imagens/py.png');
+      background-image: url('sarahPage/public/imagens/py.png');
  
 
  }
 
  .card2{
-      background-image: url('/public/imagens/r.png');
+      background-image: url('../imagens/r.png');
  
   }
 
  .card3{
-      background-image: url('/public/imagens/pwbi.png');
+      background-image: url('../public/imagens/pwbi.png');
  
  }
 
@@ -373,7 +374,7 @@ input:checked ~ label .hamburguer:after {
 
 .perfilImag{
 
-  background-image: url('/public/imagens/p2.png');
+  background-image: url('../public/imagens/p2.png');
   background-repeat: no-repeat;
   background-position: center ;   
   width: 100%;
@@ -418,7 +419,7 @@ input:checked ~ label .hamburguer:after {
 
 
 .ld{
-  background-image: url('/public/imagens/link.png') ;
+  background-image: url('public/imagens/link.png') ;
     background-repeat: no-repeat ;
 
 }
@@ -430,7 +431,7 @@ input:checked ~ label .hamburguer:after {
 }
 
 .git{
-  background-image: url('/public/imagens/git.png') ;
+  background-image: url('/.../public/imagens/git.png') ;
   background-repeat: no-repeat ;
 }
 
