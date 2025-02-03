@@ -373,7 +373,7 @@ input:checked ~ label .hamburguer:after {
 
 .perfilImag{
 
-  background-image: url('/public/imagens/p2.png');
+  background-image: url('.../public/imagens/p2.png');
   background-repeat: no-repeat;
   background-position: center ;   
   width: 100%;
@@ -418,7 +418,7 @@ input:checked ~ label .hamburguer:after {
 
 
 .ld{
-  background-image: url('/public/imagens/link.png') ;
+  background-image: url('public/imagens/link.png') ;
     background-repeat: no-repeat ;
 
 }
@@ -430,7 +430,7 @@ input:checked ~ label .hamburguer:after {
 }
 
 .git{
-  background-image: url('/public/imagens/git.png') ;
+  background-image: url('/.../public/imagens/git.png') ;
   background-repeat: no-repeat ;
 }
 
