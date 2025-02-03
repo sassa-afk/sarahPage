@@ -216,7 +216,7 @@ input:checked ~ label .hamburguer:after {
 .painel1{
 
 /*  margin-left: 01px ;*/
-  background-image: url('.../imagens/1920.png');
+  background-image: url('public/imagens/1920.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; 
@@ -314,7 +314,7 @@ input:checked ~ label .hamburguer:after {
 
  }
  .card1{
-      background-image: url('/public/imagens/py.png');
+      background-image: url('sarahPage/public/imagens/py.png');
  
 
  }
