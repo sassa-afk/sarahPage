@@ -216,7 +216,7 @@ input:checked ~ label .hamburguer:after {
 .painel1{
 
 /*  margin-left: 01px ;*/
-  background-image:url("../public/imagens/1920.png");
+  background-image: url("../imagens/1920.png");
  /*   background-image: url('https://i.pinimg.com/736x/e3/da/d0/e3dad0e6c76f768c00040388abb7753d.jpg'); */
   background-position: center;
   background-repeat: no-repeat;
@@ -315,7 +315,7 @@ input:checked ~ label .hamburguer:after {
 
  }
  .card1{
-      background-image: url('sarahPage/public/imagens/py.png');
+      background-image: url('./imagens/py.png');
  
 
  }
@@ -353,7 +353,7 @@ input:checked ~ label .hamburguer:after {
 
 .TempoFormacao {
  
-  background-image: url('/public/imagens/uu.png');
+  background-image: url('../imagens/uu.png');
 /*  background-image: url('/public/imagens/uu.png');*/
   background-position: center;
   background-repeat: no-repeat;
@@ -374,7 +374,7 @@ input:checked ~ label .hamburguer:after {
 
 .perfilImag{
 
-  background-image: url('../public/imagens/p2.png');
+ background-image: url('../public/imagens/p2.png');
   background-repeat: no-repeat;
   background-position: center ;   
   width: 100%;
