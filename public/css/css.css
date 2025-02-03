@@ -315,23 +315,23 @@ input:checked ~ label .hamburguer:after {
 
  }
  .card1{
-      background-image: url('./imagens/py.png');
+      background-image: url("../imagens/py.png");
  
 
  }
 
  .card2{
-      background-image: url('../imagens/r.png');
+      background-image: url("../imagens/r.png");
  
   }
 
  .card3{
-      background-image: url('../public/imagens/pwbi.png');
+      background-image: url("../imagens/pwbi.png");
  
  }
 
  .card4{
-      background-image: url('/public/imagens/sql.png');
+      background-image: url("../imagens/sql.png");
       background-position: center ;
  
  }
@@ -353,8 +353,8 @@ input:checked ~ label .hamburguer:after {
 
 .TempoFormacao {
  
-  background-image: url('../imagens/uu.png');
-/*  background-image: url('/public/imagens/uu.png');*/
+  background-image: url("../imagens/uu.png");
+/*  background-image: url('../imagens/uu.png');*/
   background-position: center;
   background-repeat: no-repeat;
   height: 85%;
@@ -374,7 +374,7 @@ input:checked ~ label .hamburguer:after {
 
 .perfilImag{
 
- background-image: url('../public/imagens/p2.png');
+ background-image: url("../imagens/p2.png");
   background-repeat: no-repeat;
   background-position: center ;   
   width: 100%;
@@ -419,19 +419,19 @@ input:checked ~ label .hamburguer:after {
 
 
 .ld{
-  background-image: url('public/imagens/link.png') ;
+  background-image: url("../imagens/link.png") ;
     background-repeat: no-repeat ;
 
 }
 
 .mail{
-  background-image: url('/public/imagens/mail.png') ;
+  background-image: url("../imagens/mail.png") ;
     background-repeat: no-repeat ;
 
 }
 
 .git{
-  background-image: url('/.../public/imagens/git.png') ;
+  background-image: url("../imagens/git.png") ;
   background-repeat: no-repeat ;
 }
 
@@ -739,7 +739,7 @@ input:checked ~ label .hamburguer:after {
  .TempoFormacao {
 /*     background-image: url('/public/imagens/sss.png');*/
 
-    background-image: url('/public/imagens/uu2.png');
+    background-image: url("../imagens/uu2.png");
 
     margin-left: 0% ;
 
