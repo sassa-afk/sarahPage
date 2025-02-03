@@ -321,12 +321,12 @@ input:checked ~ label .hamburguer:after {
  }
 
  .card2{
-      background-image: url('/public/imagens/r.png');
+      background-image: url('../imagens/r.png');
  
   }
 
  .card3{
-      background-image: url('/public/imagens/pwbi.png');
+      background-image: url('../public/imagens/pwbi.png');
  
  }
 
